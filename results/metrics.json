@@ -1,0 +1,40 @@
+{
+  "dataset": {
+    "energy_rows": 35064,
+    "weather_rows": 178396,
+    "usable_model_rows": 34896
+  },
+  "split": {
+    "train_rows": 24427,
+    "validation_rows": 5234,
+    "test_rows": 5235,
+    "test_start": "2018-05-27 20:00:00+00:00",
+    "test_end": "2018-12-31 22:00:00+00:00"
+  },
+  "selected_model": "hist_gbr",
+  "test": {
+    "mae": 1.505575617851394,
+    "rmse": 2.0183877167115187,
+    "r2": 0.9349677801181939,
+    "persistence_mae": 1.9724183381088822,
+    "day_ahead_mae": 8.600949379178605,
+    "final_fit_seconds": 1.8029709429999912,
+    "test_infer_seconds": 0.03640666499995859
+  },
+  "signal": {
+    "threshold_eur_per_mwh": 0.5,
+    "cost_assumption_eur_per_mwh_active": 0.5,
+    "active_rate": 0.9915950334288444,
+    "directional_accuracy_active": 0.9799653246002697,
+    "mean_net_eur_per_mwh_all_hours": 8.009889207258835,
+    "mean_net_eur_per_mwh_active": 8.077782700828358,
+    "n_active_hours": 5191,
+    "always_long_net_mean_eur_per_mwh": 7.420231136580706
+  },
+  "limitations": [
+    "Chronological split; no shuffled validation.",
+    "Current-hour observed weather is excluded; only lagged observed weather is used.",
+    "Research-only spread-direction simulation, not live trading or a specific exchange contract P&L.",
+    "Transaction/slippage assumption is illustrative at 0.5 EUR/MWh per active signal."
+  ]
+}
