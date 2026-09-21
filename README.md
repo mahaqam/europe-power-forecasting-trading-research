@@ -38,7 +38,9 @@ Current-hour observed weather is not used as an input. Weather enters only throu
 
 ## Reproduce
 
-Dataset: https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather
+Dataset:
+
+- Energy + weather: https://www.kaggle.com/datasets/nicholasjhana/energy-consumption-generation-prices-and-weather
 
 ```bash
 pip install -r requirements.txt
@@ -60,6 +62,14 @@ FastAPI:
 ```bash
 uvicorn api.main:app --reload
 ```
+
+## Streamlit deployment
+
+- Repository: `mahaqam/europe-power-forecasting-trading-research`
+- Branch: `main`
+- Main file: `app/dashboard.py`
+
+No secrets are required for the deterministic public demo.
 
 ## Scope
 
