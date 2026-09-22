@@ -51,6 +51,8 @@ ZIP files containing one CSV are also accepted.
 
 ## Demo
 
+**Live demo:** https://europe-power-forecasting-trading-research.streamlit.app/
+
 The Streamlit app uses a bundled sample from the held-out predictions so it can run without redistributing the full source dataset. It shows verified benchmark metrics and lets you replay the spread threshold/cost assumptions interactively.
 
 ```bash
